@@ -27,9 +27,7 @@ export const AttackOrigins = () => {
     return (
         <div className="  h-[22.625rem] bg-custom-white rounded border-2 border-black mr-[1.25rem]">
             
-            {/* Here you would render the actual map and points using your chosen library */}
-            {/* Below is a simplified static example with react-simple-maps */}
-            
+         
         <div>
             <p className="text-md  bg-primary-blue text-custom-white font-bold pl-2 h-[1.9375rem] align-middle">Attack Origins</p>
         <ComposableMap>
