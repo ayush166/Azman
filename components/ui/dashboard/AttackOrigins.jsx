@@ -25,7 +25,7 @@ export const AttackOrigins = () => {
     ];
 
     return (
-        <div className="  h-[22.625rem] bg-custom-white rounded border-2 border-black mr-[1.25rem]">
+        <div className="  h-[22.625rem] bg-custom-white rounded border-2 border-[#CCCCCC] m-[1rem]">
             
          
         <div>

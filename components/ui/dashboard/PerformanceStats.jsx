@@ -45,12 +45,14 @@ const AdditionalStats = ({ stats }) => {
 // PerformanceStats.jsx
 export const PerformanceStats = ({ stats, additionalStats }) => {
   return (
-    <div className="bg-white shadow rounded-lg ">
-      <p className="text-md font-bold h-[1.9375rem] bg-primary-blue text-custom-white pl-2 align-middle">Performance Statistics</p>
+    <div className="bg-white shadow  m-4 rounded border-2 border-[#CCCCCC] ">
+      <p className="text-md font-bold h-[1.9375rem] bg-primary-blue text-custom-white pl-2  align-middle">Performance Statistics</p>
+      <div className="">
       <div className="p-4">
       {dummyStats.map((stat, index) => (
         <Statistic key={index} label={stat.label} value={stat.value} isProgressBar={stat.isProgressBar} />
       ))}
+      </div>
       </div>
       <AdditionalStats stats={additionalStats} />
     </div>
