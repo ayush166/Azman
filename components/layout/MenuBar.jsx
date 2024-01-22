@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { menuItems } from "@/lib/menuItems";
 import clsx from "clsx";
-import {DashboardContent} from "@/ui/DashboardContent";
-import {ServicesContent} from "@/ui/ServicesContent";
-import { DefaultSecurity } from "@/ui/DefaultSecurity";
-import {Certificates} from "@/ui/Certificates";
+import {DashboardContent} from "@/ui/dashboard/DashboardContent";
+import {ServicesContent} from "components/ui/ServicesContent";
+import { DefaultSecurity } from "components/ui/DefaultSecurity";
+import {Certificates} from "components/ui/Certificates";
 import { useMenu } from '@/context/MenuContext';
 export const Menubar = () => {
  // Use the context to get the current active menu state and the function to update it.
@@ -30,7 +30,7 @@ export const Menubar = () => {
 
 
   return (
-    <nav className=" text-black bg-custom-blue mx-[5.5rem]">
+    <nav className=" text-black bg-custom-blue ">
      
        
           {/* Main Menu */}
@@ -98,7 +98,7 @@ const SubMenu = ({ activeMenu, activeSubMenu, onSubMenuClick }) => {
         className={clsx(
           'rounded-md text-xs font-semibold cursor-pointer transition-colors duration-200',
           {
-            'border-black border-2 bg-custom-white px-3': activeSubMenu === subItem,
+            'border-black border-2 bg-custom-white  px-3': activeSubMenu === subItem,
             'text-blue-500 ': activeSubMenu !== subItem,
           }
         )}

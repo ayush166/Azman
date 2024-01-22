@@ -1,15 +1,15 @@
 // Navigation.jsx
 import React from 'react';
-import { Menubar } from '@/ui/MenuBar';
+import { Menubar } from 'components/layout/MenuBar';
 import { useMenu } from '@/context/MenuContext';
 
 const Navigation = () => {
   const { activeMenu } = useMenu();
 
   return (
-    <nav className="">
-      <div className="">
-        <div className="flex pl-[5rem] justify-between bg-custom-blue items-center py-3 max-w-[85rem] mx-auto">
+   
+      <div className="max-w-[83.75rem] mx-[17.5rem]">
+        <div className="flex pl-[5rem] justify-between bg-custom-blue items-center py-3">
           {/* Logo and Links */}
           <div className="flex items-center">
             <div className="text-white text-lg font-bold">Barracuda | CloudGen WAF</div>
@@ -34,7 +34,7 @@ const Navigation = () => {
         {/* Menubar */}
         <Menubar />
       </div>
-    </nav>
+   
   );
 };
 

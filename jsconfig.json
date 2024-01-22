@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/ui/*": ["ui/*"],
+      "@/ui/*": ["components/ui/*"],
       "@/lib/*": ["lib/*"],
       "@/public/*": ["public/*"],
       "@/styles/*": ["styles/*"],

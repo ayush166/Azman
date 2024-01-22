@@ -1,8 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/*.{js,ts,jsx,tsx,mdx}",
-    "./ui/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,jsx}"
   ],
   theme: {
     
@@ -13,8 +12,13 @@ module.exports = {
       colors: {
         'custom-gray':'#D0D0D0',
         'custom-blue':'#3A5681',
-        'custom-white':'#fff',
-        'custom-lightwhite':'#F4F4F4'
+        'custom-white':'#FFFFFF',
+        'custom-lightwhite':'#F4F4F4',
+        'secondary-white':'#F8F8F8',
+        'secondary-gray':'#999999',
+        'primary-gray':'#DDDDDD',
+        'secondary-blue':"#4D8FCD",
+        'primary-blue':"#37537E",
       },
     },
     
