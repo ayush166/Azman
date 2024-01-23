@@ -93,7 +93,7 @@ export const Attacks = () => {
     // console.log("Legend Payload attack:", legendPayload);
     return (
       <div className="rounded border-2 border-[#CCCCCC] mx-4 ">
-        <div className="bg-blue-500 text-white font-bold p-2">
+        <div className="bg-primary-blue text-white font-bold p-2">
           <p className="text-md">Attacks</p>
         </div>
         <div className="flex justify-center items-center bg-white p-4">
