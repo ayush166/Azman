@@ -19,7 +19,9 @@ module.exports = {
         'primary-gray':'#DDDDDD',
         'secondary-blue':"#4D8FCD",
         'primary-blue':"#37537E",
-        'primary-green':"#5ba71b"
+        'primary-green':"#5ba71b",
+        'button-white':"#E6E6E6",
+        'button-gray':"#555555"
       },
     },
     

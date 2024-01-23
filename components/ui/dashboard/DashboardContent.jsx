@@ -4,6 +4,7 @@ import { PerformanceStats } from "./PerformanceStats";
 import SubscriptionStatus from "./Subscriptions";
 import { InterfaceStats } from "./InterfaceStats";
 import { Attacks } from "./Attacks";
+import {BotStatistics} from "./BotStatistics";
 
 
 
@@ -33,7 +34,7 @@ export const DashboardContent = () => {
 
                 {/* column 2 */}
                 <div>
-                    <Sa />
+                  <BotStatistics/>
                 </div>
             </div>
         </div>

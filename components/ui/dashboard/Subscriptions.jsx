@@ -4,7 +4,7 @@ import React from 'react';
 
 const SubscriptionStatus = () => {
   return (
-    <div className='rounded border-2 border-[#CCCCCC] mx-4 '>
+    <div className='rounded border-2 border-[#CCCCCC] mx-4 w-full'>
       <div>
         <p className="text-md  bg-primary-blue text-custom-white font-bold pl-2 h-[1.9375rem] align-middle">
           Subscription Status

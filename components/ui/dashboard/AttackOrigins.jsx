@@ -21,17 +21,17 @@ export const AttackOrigins = () => {
     { coordinates: [28.9784, 41.0082], name: "Istanbul", value: 60 },
     { coordinates: [-43.1729, -22.9068], name: "Rio de Janeiro", value: 30 },
     { coordinates: [144.9631, -37.8136], name: "Melbourne", value: 20 },
-        // ... other locations
+        
     ];
 
     return (
-        <div className="  h-[22.625rem] bg-custom-white rounded border-2 border-[#CCCCCC] m-[1rem]">
+        <div className="w-full  h-[22.625rem] bg-custom-white rounded border-2 border-[#CCCCCC] m-[1rem]">
             
          
         <div>
             <p className="text-md  bg-primary-blue text-custom-white font-bold pl-2 h-[1.9375rem] align-middle">Attack Origins</p>
         <ComposableMap>
-      <ZoomableGroup center={[13,-10]}>
+      <ZoomableGroup center={[20,-5]} zoom={1.1}>
       <Geographies geography={geoJson}>
         {({ geographies }) =>
           geographies.map((geo) => (
@@ -49,7 +49,7 @@ export const AttackOrigins = () => {
                         <circle
                             cx="0"
                             cy="0"
-                            r={Math.sqrt(attack.value)} // Adjust the radius by the square root of the value to get a relative size
+                            r={Math.sqrt(attack.value)} 
                             fill="#95B6D5"
                             stroke="#4D8FCD"
                             strokeWidth="2"

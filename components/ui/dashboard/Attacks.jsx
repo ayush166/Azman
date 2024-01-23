@@ -55,7 +55,7 @@ const CustomLegend = ({ activeKeys, toggleActiveKey }) => {
     dataKey: key,
     value: key.charAt(0).toUpperCase() + key.slice(1),
     color: barColors[key],
-    // Ensure that 'flag' property is not required anymore and remove it if it was not intended
+    
   }));
   return (
     <ul className="flex flex-wrap gap-2 justify-center">
@@ -92,7 +92,7 @@ export const Attacks = () => {
 
     // console.log("Legend Payload attack:", legendPayload);
     return (
-      <div className="rounded border-2 border-[#CCCCCC] mx-4 ">
+      <div className="rounded border-2 border-[#CCCCCC] mx-4 w-full">
         <div className="bg-primary-blue text-white font-bold p-2">
           <p className="text-md">Attacks</p>
         </div>
